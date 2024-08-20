@@ -38,7 +38,7 @@ export default function Header() {
         aria-controls="primary-navigation"
         aria-expanded={expanded}
         className={cn(
-          "absolute right-8 top-8 z-50 aspect-square w-8 bg-no-repeat text-white",
+          "absolute right-4 md:right-8 top-8 z-50 aspect-square w-8 bg-no-repeat text-white",
           !expanded &&
             isMobile &&
             "bg-[url('/assets/shared/icon-hamburger.svg')]",
@@ -52,7 +52,7 @@ export default function Header() {
       >
         <ul
           className={cn(
-            "fixed left-1/3 right-0 top-0 flex h-full flex-col items-center gap-4 rounded-sm bg-white bg-opacity-5 px-2 py-40 text-left backdrop-blur-md lg:static lg:flex-row lg:py-0 lg:text-center",
+            "fixed transition-transform duration-300 ease-linear left-1/3 right-0 top-0 flex h-full flex-col items-center gap-4 rounded-sm bg-accent bg-opacity-5 px-2 py-40 text-left backdrop-blur-md lg:static lg:flex-row lg:py-0 lg:text-center",
             !expanded && isMobile && "translate-x-full",
           )}
         >
