@@ -8,10 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--ff-sans)", "sans-serif"],
+        serif: ["var(--ff-serif)", "serif"],
+        "sans-cond": ["var(--ff-sans-cond)"],
+        precious: ["var(--ff-precious)"],
+      },
+      colors: {
+        "dark-blue": "hsl(230 35% 7%)",
+        accent: "hsl(231 77% 90%)",
+        white: "hsl(0 0% 100%)",
+      },
+      gridTemplateColumns: {
+        home: "2rem repeat(2, minmax(0, 40rem)) 2rem",
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        close: "url('/public/assets/shared/icon-close.svg')",
+        burger: "url('/public/assets/shared/icon-hamburger.svg')",
       },
     },
   },
